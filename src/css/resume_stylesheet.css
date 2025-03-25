@@ -1,0 +1,134 @@
+body {
+    font-family: "Charter", sans-serif;
+    line-height: 25px;
+    text-align: left;
+    font-size: 20px;
+}
+
+#intro-container{
+    display:block;
+    text-align: center;
+}
+
+#name-header {
+    padding: 5px;
+}
+
+.contact-info a{
+    text-decoration: none;
+    padding: 5px;
+    justify-content: center;
+    color: #333333;
+}
+
+.contact-info a:hover {
+    color:pink; /* Adds underline on hover */
+  }
+
+.contact-info a:not(:last-child)::after {
+    content: " | "; /* Add separator */
+    color: gray; /* Set color of the separator */
+    margin:20px;
+}
+
+.profile-photo {
+    width: 300px; /* Adjust size as needed */
+    height: auto; /* Keeps aspect ratio */
+    border-radius: 2px; /* Slightly rounded corners */
+    display: block;
+    margin: 20px auto; /* Centers the image */
+}
+ 
+#body-container {
+    display: grid;
+    grid-template-columns: 2fr 4fr; /* First column takes 2 parts, second takes 3, third takes 1 */
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+
+.body-left{
+    display:auto;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+.body-main{
+    display:inline;
+}
+.body-main-hr {
+    border-color: black;
+    margin: 10px 0;
+    background-color: black;
+}
+
+
+
+.section {
+    display: block;
+    margin-left: 0;
+}
+.section h2 {
+    display: block;
+    text-align: left;
+    max-width: 75ch;
+}
+.entry {
+    margin-left: 30px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    max-width: 75ch;
+}
+
+
+.entry-heading {
+    font-weight: bolder;
+    font-size: 22px;
+    display:block;
+    width:100%;
+    padding:1ch;
+    padding-left: 0;
+}
+.entry-text {
+    display: block;
+    text-align: left;
+    max-width: 60ch;
+}
+
+.entry-text-subdomain {
+    display: block;
+    font-weight: bold;
+    padding: 1ch;
+    padding-left: 0;
+}
+
+ol {
+    list-style-type:circle;
+  }
+
+#entry-list-1 {
+    list-style-type:decimal;
+}
+
+.date {
+    display: block;
+    text-align: right;
+    justify-content: right;
+    color: blue;
+}
+
+.new-date {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.infinity {
+    font-weight: bold;
+    color: gold; /* Luxurious gold color */
+    text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.5); /* Soft golden glow */
+    font-family: "Georgia", serif; /* Classic high-end font */
+    background-color: white; /* Clean and modern white background */
+}
